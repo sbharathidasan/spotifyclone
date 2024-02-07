@@ -1,12 +1,17 @@
 .main{
   padding:0px 24px;
   background-color: rgb(14, 13, 13);
+  padding-top: 30px ;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap:24px;
 }
 .cover img{
-  width: 148.39px;
-  height: 148.39px;
   border-radius: 5px;
   margin-bottom: 16px;
+  width: 100%;
 }
 .title h2{
   font-size: 25px;
@@ -28,12 +33,12 @@
 }
 .card{
   display: inline-block;
-  padding:16px;
   background-color: rgb(24, 23, 23);
   border-radius: 8px;
   cursor: pointer;
   opacity: 1;
   transition: background-color 0.3s;
+  width: 180.595px;
 }
 .card:hover{
   display: inline-block;
@@ -41,11 +46,24 @@
   background-color: rgb(34, 31, 31);
   transition: background-color 0.5s;  
 }
-.container{
+.card:hover .cover img{
+ box-shadow: 0px 2.5px 2px 2px rgba(15, 15, 15, 0.5);
 }
+
 .artist-info{
   color: #6a6a6a;
   font-size: .875rem;
   font-family:CircularSpotifyTxT-Black;
   font-weight: 200;
+  width:100px;
+}
+.inside-card{
+  width: 148.5px;
+  height: 230.76px;
+  align-items: center;
+  padding: 16px;
+}
+.main-bottom{
+  padding-top:40px ;
+  color: white;
 }
