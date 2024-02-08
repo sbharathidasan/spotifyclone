@@ -12,11 +12,47 @@
         width: 100%;
         object-fit: contain;
       }
+      .contain img
+      {
+        width: 200px;
+      }
+      .contain {
+        position: relative;
+      }
+      .play-button
+      {
+        width:3;
+        position:absolute;
+        top: 10px;
+        left: 160px;
+        transition:  0.5s;
+      }
+      .play-button:hover{
+        top: 15px;
+      }
+      .but{
+        border:none;
+        background-color: indianred;
+        cursor: pointer;
+        padding: 0px;
+        width: 0px;
+      }
+      .play-button  img{
+        width: 30px;
+        border-radius: 200px;
+      }
+
     </style>
   </head>
-  <body>
+  <body style="padding-bottom: 1000px;">
     <div class="pata">
       <img src="cover/cover1.jpg">
     </div>
+    <div class="cover">
+    <div class="contain">
+      <img class="cover" src="cover/cover1.jpg" >
+      <div class="play-button"><button class="but"><img src="cover/play-button.png"></button> </div>
+    </div>
+  </div>
   </body>
 </html>

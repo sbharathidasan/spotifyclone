@@ -1,9 +1,11 @@
 .main{
-  padding:0px 24px;
   background-color: rgb(14, 13, 13);
+}
+.primary-container{
+  padding:0px 24px;
   padding-top: 30px ;
 }
-.container{
+.secondary-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap:24px;
@@ -66,4 +68,7 @@
 .main-bottom{
   padding-top:40px ;
   color: white;
+}
+.webpage-info{
+  padding: 8px 40px 32px 32px;
 }
