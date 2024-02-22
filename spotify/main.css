@@ -1,9 +1,27 @@
 .main{
   background-color: rgb(14, 13, 13);
+  border-radius: 10px;
+  position: relative;
+}
+.header{
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  background-color:rgba(15, 15, 15, 0.5);
+}
+.forward-button img{
+  width: 16px;
+  border: none;
+  border-radius: 200px;
+}
+.forward-button button{
+  border: none;
+  border-radius: 10px;
+  background-color: black;
 }
 .primary-container{
   padding:0px 24px;
-  padding-top: 30px ;
+  padding-top: 60px ;
 }
 .secondary-container{
   display: grid;
@@ -56,9 +74,9 @@
   height: 148.5px;
 }
 .artist-info{
-  color: #6a6a6a;
+  color: #cecece;
   font-size: .875rem;
-  font-family:CircularSpotifyTxT-Black;
+  font-family:CircularSpotifyTxT-Book;
   font-weight: 200;
 }
 .inside-card{
@@ -76,7 +94,6 @@
 }
 .contain {
   position: relative;
-  width: ;
 }
 .play-button
 {
@@ -106,4 +123,26 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   row-gap: 6px;
+}
+.address{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.address span{
+  display:grid;
+  padding-bottom: 15px;
+  color: #9b9a9a;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: CircularSpotifyTxT-Book;
+}
+.address p{
+  color: white;
+  font-family:CircularSpotifyTxT-Black;
+}
+.bottom{
+  padding-top: 50px;
+}
+.info{
+  padding: 8px 32px 40px;
 }
