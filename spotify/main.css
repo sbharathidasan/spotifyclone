@@ -5,28 +5,124 @@
 }
 .header{
   width: 100%;
+  height: 64px  ;
   position: fixed;
+  display: flex;
   z-index: 4;
-  background-color:rgba(15, 15, 15, 0.5);
+  background-color:rgb(0, 0, 0,0.5);
+  top: 0px;
+  align-items: center;   
+  justify-content:space-between;
 }
-.forward-button img{
-  width: 16px;
+.member{
+  display:flex;
+  flex-direction: row;
+  flex: 1fr 1fr;
+  align-items: center;
+  margin-right: 350px ;
+  gap: 20px;
+}
+.signup{
+  color: gray;
+  font-family:CircularSpotifyTxT-Black ;
+}
+.signup:hover{
+  color: white;
+  cursor: pointer;
+  margin-top: 3px;
+  transition:.9s ;
+}
+.login{
+  background-color: white;
+  width: 100px;
+  text-align:center;
+  color: black;
+  border-radius: 50px;
+  font-family:CircularSpotifyTxT-Black ;
+}
+.login:hover{
+  margin-top:3px;
+  opacity:.5;
+  cursor: pointer;
+  transition: .8;
+}
+.login p{
+  margin: 10px;
+}
+.headerbutton{
+  display:flex;
+  padding-left :30px ;
+  gap: 10px;
+}
+.f-button{
+  position:relative;
+  display: inline block;
+}
+.f-button  button{
+  width: 25px;
+  height: 25px;
   border: none;
+  background-color: rgb(112, 112, 112);
   border-radius: 200px;
 }
-.forward-button button{
+.f-button  img:hover{
+  width:27px;
+  height:27px;
+  opacity: 1;
+  transition: .2s;
+}
+.f-button img{
+  position: absolute;
+  border-radius: 200px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+}
+
+.b-button{
+  position:relative;
+  display: inline block;
+}
+.b-button  img:hover{
+  width:27px;
+  height:27px;
+  opacity: 1;
+  transition: .2s;
+}
+.b-button  button{
+  width: 25px;
+  height: 25px;
   border: none;
-  border-radius: 10px;
-  background-color: black;
+  background-color: rgb(112, 112, 112);
+  border-radius: 200px;
+}
+.b-button img{
+  position: absolute;
+  border-radius: 200px;
+  width: 25px;
+  height: 25px;
+  opacity: .5;
 }
 .primary-container{
+  display: grid;
+  grid-template-columns: 1fr;
   padding:0px 24px;
-  padding-top: 60px ;
-}
+  padding-top: 85px;
+} 
 .secondary-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap:24px;
+} 
+@media(max-width:1000px){
+  .secondary-container{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width:750px){
+  .secondary-container{
+      grid-template-columns: 1fr 1fr;
+  }
 }
 .cover img{
   border-radius: 5px;
